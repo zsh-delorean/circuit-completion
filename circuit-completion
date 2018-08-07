@@ -6,7 +6,7 @@ if [[ "$TERM" == 'dumb' ]]; then
   return 2
 fi
 
-circuit 'mr.fusion'
+circuit 'mr.fusion' 'utility'
 
 zstyle -a ':delorean:circuit:completion' whitelist 'whitelist'
 whitelist="(${(j:|:)whitelist})"
